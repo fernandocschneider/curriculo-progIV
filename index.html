@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Fernando Schneider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="cabecalho">
+            <div class="perfil">
+                <img src="media/foto-perfil.jpeg" alt="Foto de perfil de Fernando Schneider" class="foto-perfil">
+                <div class="info-perfil">
+                    <h1>Fernando Camilo Schneider</h1>
+                    <p>Estudante de Ciência da Computação</p>
+                </div>
+            </div>
+            <div class="tema">
+                <button onclick="alterarTema()">Alterar Tema</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <section class="sobre-mim card">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de Ciência da Computação na UNOESC, e trabalho como Diretor Comercial na empresa MetaMilo
+            </p>
+        </section>
+
+        <div class="colunas-wrapper">
+            <section class="habilidades card">
+                <h2>Habilidades</h2>
+
+                <div class="skill-canvas">
+                    <p>HTML5 & CSS3</p>
+                    <canvas id="skillHtml" width="500" height="30" data-level="65"></canvas>
+                </div>
+
+                <div class="skill-canvas">
+                    <p>JavaScript</p>
+                    <canvas id="skillJs" width="500" height="30" data-level="50"></canvas>
+                </div>
+
+                <div class="skill-canvas">
+                    <p>Java</p>
+                    <canvas id="skillJava" width="500" height="30" data-level="70"></canvas>
+                </div>
+
+                <div class="skill-canvas">
+                    <p>Python</p>
+                    <canvas id="skillPython" width="500" height="30" data-level="30"></canvas>
+                </div>
+
+                <div class="skill-canvas">
+                    <p>Banco de Dados</p>
+                    <canvas id="skillBanco" width="500" height="30" data-level="70"></canvas>
+                </div>
+
+                <div class="skill-canvas">
+                    <p>Inglês</p>
+                    <canvas id="skillIngles" width="500" height="30" data-level="95"></canvas>
+                </div>
+
+                <div class="skill-canvas">
+                    <p>Trabalho em equipe</p>
+                    <canvas id="skillEquipe" width="500" height="30" data-level="90"></canvas>
+                </div>
+            </section>
+
+
+            <section class="experiencia card">
+                <h2>Experiências</h2>
+
+                <article>
+                    <h3>MetalMilo</h3>
+                    <p><strong>Cargo:</strong> Auxiliar de Escritório</p>
+                    <p><strong>Período:</strong> Março 2021 - Maio 2021</p>
+
+                </article>
+
+                <article>
+                    <h3>Prefeitura de São Miguel do Oeste</h3>
+                    <p><strong>Cargo:</strong> Estagiário</p>
+                    <p><strong>Período:</strong> Maio 2021 - Dezembro 2021</p>
+
+                </article>
+
+                <article>
+                    <h3>Pottencia Informática</h3>
+                    <p><strong>Cargo:</strong> Auxiliar Administrativo</p>
+                    <p><strong>Período:</strong> Novembro 2022 - Março 2023; Março 2024 - Setembro 2024</p>
+
+                </article>
+
+                <article>
+                    <h3>Exército Brasileiro</h3>
+                    <p><strong>Cargo:</strong> Soldado</p>
+                    <p><strong>Período:</strong> Março 2023 - Fevereiro 2024</p>
+                </article>
+
+                <article>
+                    <h3>MetalMilo</h3>
+                    <p><strong>Cargo:</strong> Diretor Comercial</p>
+                    <p><strong>Período:</strong> Setembro 2024 - Presente</p>
+                </article>
+            </section>
+        </div>
+
+        <section class="contato card">
+            <h2>Contato</h2>
+
+            <form id="form-contato">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome" class="sr-only">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem" class="sr-only">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua Mensagem..." required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="redes-sociais">
+                <p>Me siga nas redes sociais:</p>
+                <div class="icones-sociais">
+                    <a href="https://github.com/fernandocschneider" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/fernando-c-schneider/" target="_blank" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/fer_nando_sch/" target="_blank" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025 - Fernando Camilo Schneider</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

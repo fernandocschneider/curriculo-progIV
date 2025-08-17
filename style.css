@@ -1,0 +1,299 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta moderna */
+:root {
+    --cor-primaria: #1e88e5;
+    --cor-secundaria: #1565c0;
+    --cor-fundo: #ecf4ffa2;
+    --cor-texto: #333;
+    --cor-clara: #ffffffd7;
+    --cor-card: #ffffff; /* Fundo dos cards */
+    --sombra-card: 0 4px 8px rgba(0,0,0,0.1);
+    --cor-botao: #1e4ce5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+header.container {
+    background: var(--cor-primaria);
+    color: var(--cor-clara);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--sombra-card);
+    margin-top: 30px; /* Espaço do topo da página */
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info-perfil h1{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.info-perfil p{
+    font-size: 1em;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Conteúdo principal */
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+}
+
+/* Garante que o espaçamento do main não interfira */
+main.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Centraliza o rodapé */
+footer.container {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #777;
+}
+
+.card {
+    background-color: var(--cor-card);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: var(--sombra-card);
+}
+
+.colunas-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 20px;
+}
+
+/* --- Estilos para Barras de Habilidade (Versão com Canvas) --- */
+
+.skill-canvas {
+    margin-bottom: 20px;
+}
+.skill-canvas:last-child {
+    margin-bottom: 0;
+}
+
+.skill-canvas p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.skill-canvas canvas {
+    max-width: 100%; /* Garante que o canvas seja responsivo */
+    height: auto;
+}
+
+.experiencia article:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.experiencia h3 {
+    margin-bottom: 4px;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form-contato label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#form-contato input,
+#form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+#form-contato button {
+    align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+/* --- Links e Botões --- */
+.redes-sociais {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.redes-sociais p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: var(--cor-botao);
+    color: var(--cor-clara);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--cor-secundaria);
+}
+
+/* --- Estilos para Ícones de Redes Sociais --- */
+.icones-sociais {
+    display: flex; /* Alinha os ícones na horizontal */
+    justify-content: center; /* Centraliza o grupo de ícones */
+    gap: 25px; /* Espaçamento entre os ícones */
+    margin-top: 10px;
+}
+
+.icones-sociais a {
+    color: var(--cor-texto); /* Cor padrão do ícone */
+    font-size: 2rem; /* Tamanho do ícone (aumente ou diminua se preferir) */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.icones-sociais a:hover {
+    color: var(--cor-primaria); /* Muda para a cor azul principal */
+    transform: translateY(-5px); /* Eleva o ícone um pouco */
+}
+
+/* Modo escuro */
+body.dark {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark section {
+    background: #1e1e1e;
+}
+
+body.dark header {
+    background: #0d47a1;
+}
+
+body.dark #form-contato input,
+body.dark #form-contato textarea {
+    background-color: #2d2d2d; /* Um cinza bem escuro para o fundo */
+    color: #e0e0e0;             /* Cor do texto digitado (claro) */
+    border: 1px solid #555;     /* Borda um pouco mais clara que o fundo */
+}
+
+/* Estilo para o texto de placeholder (ex: "Seu Nome:") */
+body.dark #form-contato ::placeholder {
+    color: #888; /* Cinza claro para o placeholder */
+}
+
+/* Estilo para quando o campo está focado (selecionado) */
+body.dark #form-contato input:focus,
+body.dark #form-contato textarea:focus {
+    border-color: var(--cor-primaria); /* Usa a cor azul principal do site para destacar */
+    outline: none; /* Remove a borda padrão do navegador */
+}
+
+/* Classe para esconder elementos visualmente, mas mantê-los para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* --- Rodapé --- */
+footer.container {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfil {
+        flex-direction: column;
+    }
+
+    .colunas-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
