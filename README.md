@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte do meu currículo online pessoal, um projeto de página única desenvolvido para apresentar minhas habilidades e experiências de forma moderna e interativa.
 
-**🔗 Acesse a versão ao vivo:** **https://fernandocschneider.github.io/curriculo-progIV/** ---
+**🔗 Acesse a versão ao vivo:** **https://fernandocschneider.github.io/curriculo-progIV/** 
 
 ## ✨ Funcionalidades
 
